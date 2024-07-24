@@ -1,0 +1,74 @@
+/* Base styles */
+.navBarContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .browseCategoriesDropDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #fff;
+  }
+  
+  .navItem {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .navBarContainer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .browseCategoriesDropDown {
+      width: 30%;
+    }
+  
+    .navContainer {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .navItem {
+        font-size: 16px;
+        /* padding: 10px 30px; */
+      }
+  }
+  
+  /* Large devices (desktops, 1024px and up) */
+  @media (min-width: 1024px) {
+    .navContainer {
+      justify-content: space-around;
+    }
+  
+    .navItem {
+      font-size: 16px;
+      /* padding: 10px 30px; */
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .navItem {
+      font-size: 16px;
+    }
+  }
+  
